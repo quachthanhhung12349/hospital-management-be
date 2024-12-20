@@ -27,7 +27,7 @@
 # Links:
 - Backend: https://github.com/quachthanhhung12349/hospital-management-be
 - Frontend: https://github.com/quachthanhhung12349/Hospital-management-project
-- SQL:
+- SQL: https://drive.google.com/file/d/1yXoRxZP2nFmg8gC1n4zf8KNKIsBASmXm/view?usp=sharing
 
 ## Tính năng
 
