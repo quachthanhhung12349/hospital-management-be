@@ -1,12 +1,4 @@
-/**
- * @program: project2
- * @description: class for message
- * @author: Luke
- * @create: 2021-01-06 14:24
- **/
-
-
-package com.revature.pojo;
+package com.uetbtlcsdl.hospital_management_be.pojo;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -33,7 +25,7 @@ public class Message {
 
     @ManyToOne
     @JoinColumn(name = "forumid")
-    private com.revature.pojo.Forum forumId;
+    private com.uetbtlcsdl.hospital_management_be.pojo.Forum forumId;
 
     @OneToOne
     @JoinColumn(name="patientid")
@@ -75,11 +67,11 @@ public class Message {
         this.docType = docType;
     }
 
-    public com.revature.pojo.Forum getForumId() {
+    public com.uetbtlcsdl.hospital_management_be.pojo.Forum getForumId() {
         return forumId;
     }
 
-    public void setForumId(com.revature.pojo.Forum forumId) {
+    public void setForumId(com.uetbtlcsdl.hospital_management_be.pojo.Forum forumId) {
         this.forumId = forumId;
     }
 

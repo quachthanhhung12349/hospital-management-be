@@ -1,4 +1,4 @@
-package com.revature.configuration;
+package com.uetbtlcsdl.hospital_management_be.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

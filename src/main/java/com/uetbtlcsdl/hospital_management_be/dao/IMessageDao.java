@@ -1,6 +1,6 @@
-package com.revature.dao;
+package com.uetbtlcsdl.hospital_management_be.dao;
 
-import com.revature.pojo.Message;
+import com.uetbtlcsdl.hospital_management_be.pojo.Message;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

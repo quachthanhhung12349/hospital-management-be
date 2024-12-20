@@ -6,7 +6,7 @@
  **/
 
 
-package com.revature.pojo;
+package com.uetbtlcsdl.hospital_management_be.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

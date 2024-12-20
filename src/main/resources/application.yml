@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: ${DB_SCHEMA}
+        
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://cah8ha8ra8h8i7.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/de75260tk0ggmk?user=u3hj5963fc2bgu&password=pc5ebfdcea52e34a0d7e707c82efbcd965007aba8cab3649f93942b42c580d04e
+    password: pc5ebfdcea52e34a0d7e707c82efbcd965007aba8cab3649f93942b42c580d04e
+    username: u3hj5963fc2bgu
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL}
+    password: ${EMAIL_PASSWORD}
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+        auth: true
+        starttls.enable: true
+        ssl.trust: smtp.gmail.com
+server:
+  port: ${PORT:8080}
+

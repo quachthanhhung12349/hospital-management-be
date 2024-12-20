@@ -1,4 +1,4 @@
-package com.revature.dao;
+package com.uetbtlcsdl.hospital_management_be.dao;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.revature.pojo.RequestTable;
+import com.uetbtlcsdl.hospital_management_be.pojo.RequestTable;
 
 public interface IRequestDao extends JpaRepository<RequestTable, Integer>{
 

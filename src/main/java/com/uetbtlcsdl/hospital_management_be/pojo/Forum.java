@@ -1,12 +1,4 @@
-/**
- * @program: project2
- * @description: entity for forum
- * @author: Luke
- * @create: 2021-01-06 14:21
- **/
-
-
-package com.revature.pojo;
+package com.uetbtlcsdl.hospital_management_be.pojo;
 
 import javax.persistence.*;
 import java.util.Date;
