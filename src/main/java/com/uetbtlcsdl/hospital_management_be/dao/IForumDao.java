@@ -1,4 +1,7 @@
-package com.uetbtlcsdl.hospital_management_be.dao;
+package com.revature.dao;
 
-public interface IForumDao {
+import com.revature.pojo.Forum;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IForumDao extends JpaRepository<Forum,Integer> {
 }
