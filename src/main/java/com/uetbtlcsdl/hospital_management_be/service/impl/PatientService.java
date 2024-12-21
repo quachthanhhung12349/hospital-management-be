@@ -1,9 +1,7 @@
 package com.uetbtlcsdl.hospital_management_be.service.impl;
 
 import java.sql.Timestamp;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +13,6 @@ import com.uetbtlcsdl.hospital_management_be.pojo.Patient;
 import com.uetbtlcsdl.hospital_management_be.pojo.Request;
 import com.uetbtlcsdl.hospital_management_be.pojo.RequestTable;
 import com.uetbtlcsdl.hospital_management_be.service.IPatientService;
-
-import net.bytebuddy.asm.Advice.Local;
 
 @Service
 public class PatientService implements IPatientService{
@@ -49,7 +45,7 @@ public class PatientService implements IPatientService{
         rt.setProblem(req.getProblem());
         LocalDateTime ld = LocalDateTime.now();
         Timestamp today = Timestamp.valueOf(ld);
-        rt.setTimeStamp(today);
+        rt.setTimeCreated(today);
         rt.setResponsed(false);
         rt.setPatientId(p);
         rt.setHasappointment(false);
