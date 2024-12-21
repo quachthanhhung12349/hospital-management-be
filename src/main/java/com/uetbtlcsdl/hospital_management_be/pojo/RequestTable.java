@@ -1,6 +1,5 @@
 package com.uetbtlcsdl.hospital_management_be.pojo;
 
-import javax.naming.Name;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -16,8 +15,8 @@ public class RequestTable {
     @Column(name = "problem")
     private String problem;
 
-    @Column(name = "timestamp")
-    private Date timeStamp;
+    @Column(name = "timecreated")
+    private Date timeCreated;
 
     @Column(name = "timeresponded")
     private Date timeresponded;
@@ -47,7 +46,7 @@ public class RequestTable {
         return "RequestTable{" +
                 "requestId=" + requestId +
                 ", problem='" + problem + '\'' +
-                ", timeStamp=" + timeStamp +
+                ", timecreated=" + timeCreated +
                 ", isResponsed=" + isresponsed +
                 ", patientId=" + patientId +
                 ", doctorId=" + doctorid +
@@ -90,12 +89,12 @@ public class RequestTable {
         this.problem = problem;
     }
 
-    public Date getTimeStamp() {
-        return timeStamp;
+    public Date gettimecreated() {
+        return timeCreated;
     }
 
-    public void setTimeStamp(Date timeStamp) {
-        this.timeStamp = timeStamp;
+    public void setTimeCreated(Date timecreated) {
+        this.timeCreated = timecreated;
     }
 
     public boolean isResponsed() {
